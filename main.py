@@ -134,7 +134,7 @@ def main():
             name = words.split()
             formatted_name = transliterate(words.lower()).split()
             login = f"{formatted_name[0]}.{formatted_name[1][0]}.{formatted_name[2][0]}"
-            new_rows.append([login, DEFAULT_PASSWORD, name[1], name[2]])
+            new_rows.append([login, DEFAULT_PASSWORD, name[1], name[0]])
             print("Пользователь добавлен в файл.")
             words = input(
                 "Введите имена пользователей (через пробел) или введите 'STOP', чтобы закончить: "
